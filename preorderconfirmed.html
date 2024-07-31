@@ -10,38 +10,32 @@
             overflow-x: hidden;
         }
 
-        body {
-            background: #F7F9FC;
-            position: relative;
-            font-family: "Poppins", sans-serif;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
-
-        body::after {
-            content: url(https://iili.io/dFQLSDb.png);
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: -1;
-        }
-
-        body::before {
-            content: url(https://iili.io/dFQL8Ou.png);
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            z-index: -1;
-            width: 200px;
-        }
-
         table {
+            background: #F7F9FC;
+            font-family: "Poppins", sans-serif;
             width: 100%;
             position: relative;
             display: flex;
             align-items: center;
             padding: 70px 0;
+            overflow: hidden;
+        }
+
+        table::after {
+            content: url(https://iili.io/dFQLSDb.png);
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        table::before {
+            content: url(https://iili.io/dFQL8Ou.png);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            width: 200px;
         }
 
         tr,
