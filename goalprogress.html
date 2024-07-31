@@ -51,33 +51,68 @@
             width: 100%;
             text-align: center;
         }
-
-        .t_info {
-            display: flex;
-            justify-content: space-between;
-            background: #fff;
-            width: 290px;
-            padding: 6px 20px;
+        .progress_container{
+            background-color: #fff;
+            padding: 24px;
+            max-width: 400px;
             margin: auto;
-            font-weight: 500;
-            margin-bottom: 10px;
-            font-size: 15px;
-            border-radius: 5px;
+            border-radius: 16px;
+        }
+        .progress_bar{
+            display: block;
+            max-width: 350px;
+            height: 16px;
+            background-color: rgba(255, 231, 231, 1);
+            margin: 1rem auto 1rem;
+            position: relative;
+            padding: 0;
+        }
+        .progress_bar::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 50%;
+            height: 16px;
+            background-color: #FC1111;
+            border-top-left-radius: 2px;
+            border-bottom-left-radius: 2px;
         }
 
         .t_notify {
             display: flex;
-            justify-content: center;
-            background: #E0EDFF;
-            padding: 10px;
-            border-radius: 10px;
-            color: #1958B8;
-            font-size: 15px;
+            justify-content: space-between;
+            gap: 10px;
+            align-items: center;
+            background: rgba(38, 45, 60, 1);
+            padding: 16px;
+            border-radius: 16px;
+            color: #fff;
+            font-size: 10px;
             width: 435px;
             margin: 25px 0;
             margin-left: auto;
             margin-right: auto;
-            align-items: center;
+            text-align: start;
+        }
+        .refer_container{
+            max-width: 220px;
+        }
+        .refer_title{
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .btn_refer{
+            background-color: #FC1111;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+            color: #fff;
+            padding: 12px;
+            font-size: 10px;
+            font-weight: 700;
+            cursor: pointer;
         }
 
         @media (max-width:575px) {
@@ -86,6 +121,9 @@
             }
             body::before{
             opacity: .5;
+            }
+            .progress_container{
+            max-width: 300px;
             }
             .p_title{
                 font-size: 22px !important; 
@@ -100,6 +138,9 @@
                 margin-left: auto;
                 margin-right: auto;
              }
+             .refer_container {
+                max-width: 142px;
+            }
         }
     </style>
 
@@ -110,7 +151,7 @@
     <table>
         <tbody>   
             <tr>
-                <td style="display: block;"><img src="https://iili.io/dFQLvRe.png" alt=""></td>
+                <td style="display: block; margin-bottom: 10px;"><img src="https://iili.io/due3GGn.png" alt=""></td>
             </tr>
             <tr>
                 <td style="color: #FC1111;
@@ -123,28 +164,28 @@
                 style="font-size: 30px;
                 font-weight: 600;
                 color: #262D3C;
-                margin: 10px 0;">Pre-order confirmed
+                margin: 10px 0;">
+                Goal progress
                 </td>
             </tr>
 
-            <tr class="t_info">
-                <td style="color: #ADB4BF;">N° Order</td>
-                <td style="color: #262D3C;">1234567</td>
-            </tr>
-            <tr class="t_info">
-                <td style="color: #ADB4BF;">Language</td>
-                <td style="color: #262D3C;">English</td>
-            </tr>
-            <tr class="t_info" style="margin-bottom: 0;">
-                <td style="color: #ADB4BF;">Total amount</td>
-                <td style="color: #262D3C;">$ 000.0</td>
+            <tr><td style="font-size: 15px; color:#ADB4BF; margin-bottom: 2rem;">We inform you of the goal until today</td></tr>
+
+            <tr class="progress_container">
+                <td style="color: rgba(89, 96, 111, 1); font-size: 1rem;">The goal has reached 50%</td>
+                <td class="progress_bar"></td>
+                <td style="font-size: 10px; color: rgba(89, 96, 111, 1);">When we reach 1000 orders, your book will be sent out</td>
             </tr>
 
             <tr class="t_notify">
-                <td><img src="https://iili.io/dFQLkJ9.pngy" alt=""></td>
-                <td>Remember when the order goal is completed, you will be notified with another email with all the details.
+                <td><img style="width: 40px; height: 40px;" src="https://iili.io/duS7uTl.png" alt=""></td>
+                <td class="refer_container">
+                    <span class="refer_title">Refer your friends</span> <br>
+                    You will receive a benefit if 5 friends pre-order the book.
                 </td>
+                <td><button class="btn_refer">Refer here</button></td>
             </tr>
+
             <tr>
                 <td class="m_note" style="color: #ADB4BF;
                 font-size: 15px;
