@@ -7,6 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <style type="text/css">
+        body {
+            margin: 0;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        td {
+            padding: 0;
+        }
+
+        img {
+            border: 0;
+        }
+
         .table {
             font-family: "Poppins", sans-serif;
         }
@@ -40,6 +56,7 @@
                 background-position: bottom , top;
                 background-repeat: no-repeat , no-repeat;
                 background-size: contain, contain;
+                background-position-x: -35rem, 15rem;
                 margin: 0 auto;
                 position: relative;
                 padding: 70px 10px;
@@ -48,22 +65,28 @@
 
         <tbody>
             <tr>
-                <td style="display: block;"><img src="https://iili.io/dFQLvRe.png" alt=""></td>
+                <td style="display: block; margin-bottom: 20px;"><img src="https://iili.io/dARxUP4.png"
+                        alt="payment sign"></td>
             </tr>
 
             <tr>
                 <td style="color: #FC1111;
-                    font-size: 16px;
+                    font-size: 18px;
                     font-weight: 700;">Hi [Name],
                 </td>
             </tr>
 
             <tr>
-                <td class="p_title" style="font-size: 30px;
+                <td class="p_title" style="
+                    font-size: 32px;
                     font-weight: 600;
                     color: #262D3C;
-                    margin: 10px 0;">Pre-order confirmed
+                    margin: 16px 0;">Successful payment
                 </td>
+            </tr>
+
+            <tr>
+                <td style="color: rgba(89, 96, 111, 1); margin-bottom: 40px;">The order was paid correctly.</td>
             </tr>
 
             <tr class="t_info" style="
@@ -106,38 +129,15 @@
                     font-size: 15px;
                     border-radius: 5px;
                     overflow: hidden;
-                    margin-bottom: 0px;
+                    margin-bottom: 30px;
                 ">
                 <td style="color: #ADB4BF; float: left;">Total amount</td>
                 <td style="color: #262D3C; float: right;">$ 000.0</td>
             </tr>
 
-            <tr class="t_notify" style="
-                display: flex;
-                justify-content: center;
-                background: #E0EDFF;
-                padding: 10px;
-                border-radius: 10px;
-                color: #1958B8;
-                font-size: 15px;
-                max-width: 435px;
-                margin: 50px 0;
-                margin-left: auto;
-                margin-right: auto;
-                z-index: 2;
-                text-align: start;
-
-                ">
-                <td><img style="margin-right: 10px;" src="https://iili.io/dFQLkJ9.pngy" alt=""></td>
-
-                <td>Remember when the order goal is completed, you will be notified with another email with all the
-                    details.
-                </td>
-            </tr>
-
             <tr>
-                <td class="m_note" style="color: #ADB4BF;
-                    font-size: 15px;
+                <td style="color: #ADB4BF;
+                    font-size: 12px;
                     margin-bottom: 3rem;">If any questions arise regarding this order, please do not hesitate to get in
                     touch at <span style="color: #ADB4BF; text-decoration: none;"> contact@amphiblanbooks.com</span>
                 </td>
